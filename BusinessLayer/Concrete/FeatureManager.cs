@@ -25,7 +25,7 @@ namespace BusinessLayer.Concrete
 			throw new NotImplementedException();
 		}
 
-		public List<Feature> TGetList(Feature t)
+		public List<Feature> TGetList()
 		{
 			throw new NotImplementedException();
 		}

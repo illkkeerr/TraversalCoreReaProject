@@ -25,7 +25,7 @@ namespace BusinessLayer.Concrete
 			throw new NotImplementedException();
 		}
 
-		public List<Guide> TGetList(Guide t)
+		public List<Guide> TGetList()
 		{
 			throw new NotImplementedException();
 		}

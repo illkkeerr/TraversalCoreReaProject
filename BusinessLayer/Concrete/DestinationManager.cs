@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace BusinessLayer.Concrete
 {
 	public class DestinationManager : IGenericService<Destination>
 	{
+		IDestinationDal _destinationDal;
+
+		public DestinationManager(IDestinationDal destinationDal)
+		{
+			_destinationDal = destinationDal;
+		}
+
 		public Destination TGetById(int id)
 		{
 			throw new NotImplementedException();
@@ -25,9 +33,9 @@ namespace BusinessLayer.Concrete
 			throw new NotImplementedException();
 		}
 
-		public List<Destination> TGetList(Destination t)
+		public List<Destination> TGetList()
 		{
-			throw new NotImplementedException();
+			return _destinationDal.GetList();
 		}
 
 		public void TUpdate(Destination t)
