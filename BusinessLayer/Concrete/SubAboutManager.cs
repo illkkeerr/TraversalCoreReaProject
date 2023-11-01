@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,15 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class SubAboutManager : IGenericService<SubAbout>
+	public class SubAboutManager : ISubAboutService
 	{
+		ISubAboutDal _subAboutDal;
+
+		public SubAboutManager(ISubAboutDal subAboutDal)
+		{
+			_subAboutDal = subAboutDal;
+		}
+
 		public SubAbout TGetById(int id)
 		{
 			throw new NotImplementedException();
@@ -27,7 +35,7 @@ namespace BusinessLayer.Concrete
 
 		public List<SubAbout> TGetList()
 		{
-			throw new NotImplementedException();
+			return _subAboutDal.GetList();
 		}
 
 		public void TUpdate(SubAbout t)

@@ -1,0 +1,89 @@
+﻿@using EntityLayer.Concrete
+@{
+	Feature f1, f2, f3, f4,f5;
+	f1 = ViewBag.v1;
+	f2 = ViewBag.v2;
+	f3 = ViewBag.v3;
+	f4 = ViewBag.v4;
+	f5 = ViewBag.v5;
+}
+<div class="best-rooms py-5">
+	<div class="container py-md-5">
+		<div class="ban-content-inf row">
+			<div class="maghny-gd-1 col-lg-6">
+				<div class="maghny-grid">
+					<figure class="effect-lily border-radius  m-0">
+						<img class="img-fluid" src="@f1.Image" alt="" />
+						<figcaption>
+							<div>
+								<h4>@f1.Title</h4>
+								<p>@f1.Description </p>
+							</div>
+
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
+				<div class="row">
+					<div class="maghny-gd-1 col-6">
+						<div class="maghny-grid">
+							<figure class="effect-lily border-radius">
+								<img class="img-fluid" src="@f2.Image" alt="" />
+								<figcaption>
+									<div>
+										<h4>@f2.Title</h4>
+										<p>@f2.Description </p>
+									</div>
+
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="maghny-gd-1 col-6">
+						<div class="maghny-grid">
+							<figure class="effect-lily border-radius">
+								<img class="img-fluid" src="@f3.Image" alt="" />
+								<figcaption>
+									<div>
+										<h4>@f3.Title</h4>
+										<p>@f3.Description </p>
+									</div>
+
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="maghny-gd-1 col-6 mt-4">
+						<div class="maghny-grid">
+							<figure class="effect-lily border-radius">
+								<img class="img-fluid" src="@f4.Image" alt="" />
+								<figcaption>
+									<div>
+										<h4>@f4.Title</h4>
+										<p>@f4.Description </p>
+									</div>
+
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="maghny-gd-1 col-6 mt-4">
+						<div class="maghny-grid">
+							<figure class="effect-lily border-radius">
+								<img class="img-fluid" src="@f5.Image" alt="" />
+								<figcaption>
+									<div>
+										<h4>@f5.Title</h4>
+										<p>@f5.Description </p>
+									</div>
+
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

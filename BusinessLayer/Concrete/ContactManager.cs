@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class ContactManager : IGenericService<Contact>
+	public class ContactManager : IContactService
 	{
 		public Contact TGetById(int id)
 		{

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class DestinationManager : IGenericService<Destination>
+	public class DestinationManager : IDestinationService
 	{
 		IDestinationDal _destinationDal;
 

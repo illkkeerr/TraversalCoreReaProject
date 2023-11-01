@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class NewsletterManager : IGenericService<Newsletter>
+	public class NewsletterManager : INewsletterService
 	{
 		public Newsletter TGetById(int id)
 		{

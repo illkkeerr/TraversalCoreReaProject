@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class Feature2Manager : IGenericService<Feature2>
+	public class Feature2Manager : IFeature2Sevice
 	{
 		public Feature2 TGetById(int id)
 		{

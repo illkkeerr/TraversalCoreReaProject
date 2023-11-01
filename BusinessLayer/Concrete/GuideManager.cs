@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-	public class GuideManager : IGenericService<Guide>
+	public class GuideManager : IGuideService
 	{
 		public Guide TGetById(int id)
 		{
